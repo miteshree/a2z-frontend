@@ -1,5 +1,5 @@
 #home-page-container {
-    padding: 7vh 0;
+    padding: 5vh 0 25vh 0;
     text-align: center;
     color: var(--red);
     border: 1px solid var(--red);
@@ -8,7 +8,7 @@
 .heading {
     margin-bottom: 5px;
     color: var(--black);
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 .sub-heading {
@@ -18,11 +18,41 @@
     margin-top: 0px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 2000px) {
+
     .heading {
         margin-bottom: 5px;
         color: var(--black);
-        font-size: 5vw;
+        font-size: 3vw;
+    }
+
+    .sub-heading {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #home-page-container {
+        padding: 10vh 0; 
+    }
+
+    .heading {
+        margin-bottom: 5px;
+        color: var(--black);
+        font-size: 4vw;
+    }
+
+    .sub-heading {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        margin-bottom: 5px;
+        color: var(--black);
+        font-size: 6vw;
     }
 
     .sub-heading {
